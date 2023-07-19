@@ -1,4 +1,4 @@
-import {Button, Text, View} from 'react-native';
+import {Button, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {RootStackParamList} from '..';
@@ -9,7 +9,7 @@ type Props = NativeStackScreenProps<RootStackParamList, SCREENS.STORES>;
 const Stores = ({navigation}: Props) => {
   console.log('stores');
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+    <View style={styles.container}>
       <Text>Stores</Text>
       <Button
         onPress={() => navigation.navigate(SCREENS.PROFILE)}
@@ -18,5 +18,9 @@ const Stores = ({navigation}: Props) => {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {flex: 1, alignItems: 'center', justifyContent: 'center'},
+});
 
 export default Stores;
