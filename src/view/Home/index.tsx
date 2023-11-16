@@ -14,6 +14,22 @@ const Home = ({navigation}: Props) => {
       <Button
         onPress={() => navigation.navigate(SCREENS.STORES)}
         title="Stores"
+        testID="store-button"
+      />
+      <Button
+        onPress={() => navigation.navigate(SCREENS.BULBASAUR)}
+        title="Bulbasaur"
+        testID="bulbasaur-button"
+      />
+      <Button
+        onPress={() => navigation.navigate(SCREENS.SQUIRTLE)}
+        title="Squirtle"
+        testID="squirtle-button"
+      />
+      <Button
+        onPress={() => navigation.navigate(SCREENS.SQUIRTLE)}
+        title="Pikachu"
+        testID="pikachu-button"
       />
     </View>
   );
