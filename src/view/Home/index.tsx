@@ -27,7 +27,7 @@ const Home = ({navigation}: Props) => {
         testID="squirtle-button"
       />
       <Button
-        onPress={() => navigation.navigate(SCREENS.SQUIRTLE)}
+        onPress={() => navigation.navigate(SCREENS.PIKACHU)}
         title="Pikachu"
         testID="pikachu-button"
       />
